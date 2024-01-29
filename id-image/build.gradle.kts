@@ -29,7 +29,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -39,7 +39,6 @@ android {
     }
     publishing {
         singleVariant("release") {
-            // if you don't want sources/javadoc, remove these lines
             withSourcesJar()
             withJavadocJar()
         }
@@ -50,7 +49,6 @@ dependencies {
     implementation("com.google.mlkit:text-recognition:16.0.0")
     implementation("androidx.compose.ui:ui-graphics:1.5.1")
     implementation("androidx.compose.ui:ui:1.5.1")
-    //implementation("com.github.User:Repo:Tag")
 }
 
 publishing {
