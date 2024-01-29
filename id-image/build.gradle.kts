@@ -56,7 +56,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.Olaoluwa99"
             artifactId = "id-image"
-            version = "1.0.1"
+            version = "1.0.3"
 
             afterEvaluate {
                 from(components["release"])
